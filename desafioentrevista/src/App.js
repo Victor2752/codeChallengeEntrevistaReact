@@ -1,9 +1,15 @@
 import React from 'react';
 
+import PostList from './api';
+
+import Home from './pages/home';
+
+
 function App() {
+
   return (
     <div>
-      <p>hello world</p>
+      <PostList />
     </div>
   );
 }
