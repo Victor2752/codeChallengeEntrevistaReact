@@ -9,9 +9,9 @@ class Blog extends Component {
         return(
             <div>
                 <Route path="/" exact component={Posts} />
-                <Route path="/:id" exact component={FullPost} />
+                <Route path='/:id' exact component={FullPost} />
             </div>
-        )
+        );
     }
 }
 

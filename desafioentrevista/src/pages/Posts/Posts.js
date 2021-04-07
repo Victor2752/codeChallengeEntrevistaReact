@@ -26,12 +26,12 @@ class Posts extends Component {
         })
         .catch(error => {
             console.log(error);
-        })
+        });
     }
 
     render() {
 
-        let posts =<p styled={{textAlign: "center"}}>Ocorreu um erro inesperado!</p>;
+        let posts = <p styled={{textAlign: "center"}}>Ocorreu um erro inesperado!</p>;
         if(!this.state.error) {
             posts = this.state.posts.map( post =>{
                 return (
@@ -39,8 +39,7 @@ class Posts extends Component {
                         <Post
                             title={post.title}
                             author={post.author}
-                            clicked={() => this.postSelectedHandler(post.id)}
-                        />
+                            clicked={() => this.postSelectedHandler(post.id)} />
                     </Link>
                 )
             });
