@@ -16,7 +16,7 @@ class Posts extends Component {
     componentDidMount() {
         axios.get('/posts')
         .then(response => {
-            const posts = response.data.slice(0, 4);
+            const posts = response.data
             const updatePosts = posts.map(post => {
                 return{ 
                     ...post
@@ -35,15 +35,15 @@ class Posts extends Component {
         if(!this.state.error) {
             posts = this.state.posts.map( post =>{
                 return (
-                    <link to={'/' + post.id} key={post.id}>
+                    <Link to={'/' + post.id} key={post.id}>
                         <Post
                             title={post.title}
                             author={post.author}
                             clicked={() => this.postSelectedHandler(post.id)}
                         />
-                    </link>
+                    </Link>
                 )
-            })
+            });
         }
 
         return(
