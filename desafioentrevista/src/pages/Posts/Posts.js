@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 
 import Post from '../../components/Post/Post';
 
-class Post extends Component {
+class Posts extends Component {
     state = {
         posts: []
     }
 
     postSelectedHandler = (id) => {
-        this.setState({selectedPost: Id})
+        this.setState({selectedPost: id})
     }
 
     componentDidMount() {
@@ -21,11 +21,11 @@ class Post extends Component {
                 return{ 
                     ...post
                 }
-                this.setState({posts:updatePosts})
             })
-            .catch(error => {
-                console.log(error);
-            })
+            this.setState({posts:updatePosts})
+        })
+        .catch(error => {
+            console.log(error);
         })
     }
 

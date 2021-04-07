@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import axios from 'exios';
+import axios from 'axios';
 
 class FullPost extends Component {
     state={
-        loadedPost: noll
+        loadedPost: null
     }
 
     componentDidMount() {
@@ -31,9 +31,13 @@ class FullPost extends Component {
                     <h1>{this.state.loadedPost.title}</h1>
                     <p>{this.state.loadedPost.body}</p>
                 </div>
-            )
+            );
         }
+
+        return post;
     }
     
 }
+
+export default FullPost;
 
