@@ -43,5 +43,5 @@ alem disso eu poderia melhorar amelhorar a forma como eu lido com as bibliotecas
 ----------
 
 # CASO TENHA PROBLEMAS COM A EXECUÇÃO DA APLICAÇÃO ENTRE EM CONTATO:
-# E-mail: victor2752@hotmail.com
-# Tel/WhatsApp: (11) 986387326
+E-mail: victor2752@hotmail.com
+Tel/WhatsApp: (11) 986387326
