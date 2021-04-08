@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 
 import Post from '../../components/Post/Post';
 
+import "./Posts.css"
+
 class Posts extends Component {
     state = {
         posts: []
@@ -46,7 +48,7 @@ class Posts extends Component {
         }
 
         return(
-            <section>
+            <section className="Posts">
                 {posts}
             </section>
         )
